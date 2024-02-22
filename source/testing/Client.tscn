@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbyxyxy8xl8du"]
+
+[ext_resource type="Script" path="res://testing/Client.gd" id="1_xyhrq"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_xyhrq")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 156.0
+offset_right = 316.0
+offset_bottom = 250.0
+text = "Call"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
